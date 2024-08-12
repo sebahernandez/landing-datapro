@@ -1,0 +1,46 @@
+---
+import { Image } from "astro:assets";
+import Wordpress from "../assets/images/Wordpress.png";
+---
+
+<section class="container mx-auto bg-pattern-1">
+  <div class="flex flex-col md:flex-row py-5 md:py-[100px]">
+    <div
+      class="w-full md:w-1/2 flex-col md:flex-row md:justify-center md:items-center h-full text-gray-500"
+    >
+      <h2 class="text-2xl md:text-4xl text-gray-800 py-5 font-bold">
+        Aumenta y fortalece tu presencia  digital con nosotros
+      </h2>
+      <p class="text-balance py-2">
+        En nuestra empresa, nos dedicamos a construir una presencia en línea
+        sólida y efectiva para nuestros clientes. Nos comprometemos a guiarte en
+        cada paso del camino, desde la creación de un sitio web cautivador hasta
+        la implementación de estrategias de marketing digital que maximicen tu
+        alcance.
+      </p>
+      <p class="text-balance py-2">
+        Con nuestro apoyo, lograrás una visibilidad impactante y duradera que te
+        conectará de manera efectiva con tu audiencia, asegurando tu éxito en el
+        mundo digital. Juntos, trazamos el camino hacia un futuro brillante en
+        la web.
+      </p>
+    </div>
+
+    <div class="w-full md:w-1/2 py-5 md:py-0 md:flex md:justify-center">
+      <Image
+        src={Wordpress}
+        alt="Desarrollo web en WordPress"
+        width="500"
+        height="400"
+      />
+    </div>
+  </div>
+</section>
+
+<style>
+  .bg-pattern-1 {
+    background-image: url("../assets/images/BG-icons.png");
+    background-size: cover;
+  }
+
+</style>

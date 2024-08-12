@@ -1,0 +1,50 @@
+---
+import images from "../data/images.json";
+import "@splidejs/splide/dist/css/splide.min.css";
+
+---
+
+<div class="splide">
+  <div class="splide__track">
+    <ul class="splide__list">
+      {
+        images.map((image) => (
+          <li class="splide__slide">
+            <img src={image.src} alt={image.alt} />
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+</div>
+
+<style>
+  img {
+    width: 100%;
+    height:auto;
+  }
+</style>
+
+<script>
+  import "@splidejs/splide/css";
+  import { Splide } from '@splidejs/splide';
+  import { AutoScroll } from '@splidejs/splide-extension-auto-scroll';
+
+  const splide = new Splide(".splide", {
+    type: "loop", // Tipo de slider
+    gap: "5vw", // Ajusta el espacio entre las imágenes
+    focus: "center", // Ajusta el foco de la imagen
+    /* autoplay: true, */ // Habilita el autoplay
+   /*  interval: 3000, */ // Ajusta el intervalo de tiempo en milisegundos (opcional)
+   /*  pauseOnHover: false, */ // Pausa el autoplay al pasar el ratón (opcional)
+    perPage: 5, // Número de imágenes a mostrar
+    pagination: false, // Muestra la paginación
+    arrows: false, // Muestra las flechas de navegación
+    drag: 'free',
+    autoScroll: {
+    speed: 1,
+    },
+  });
+
+  splide.mount({AutoScroll});
+</script>
