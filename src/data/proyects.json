@@ -1,33 +1,38 @@
 [
-    {
-      "title": "Bambino.cl",
-      "img": { "src": "/img/proyects/bambino_01.webp" },
-      "description": "Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine."
-    },
-    {
-      "title": "Flowco.cl",
-      "img": { "src": "/img/proyects/flowco_02.webp" },
-      "description": "Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine."
-    },
-    {
-      "title": "Foodnutrition.cl",
-      "img": { "src": "/img/proyects/foodnutrition_04.webp" },
-      "description": "Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine."
-    },
-    {
-      "title": "Holabefree.cl",
-      "img": { "src": "/img/proyects/holabefree.webp" },
-      "description": "Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine."
-    },
-    {
-      "title": "Outdoorlife.cl",
-      "img": { "src": "/img/proyects/outdoorlife_05.webp" },
-      "description": "Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine."
-    },
-    {
-      "title": "Champs.cl",
-      "img": { "src": "/img/proyects/tiendachamps_03.webp" },
-      "description": "Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine."
-    }
-  ]
-  
+  {
+    "title": "Bambino.cl",
+    "img": { "src": "/img/proyects/bambino_01.webp" },
+    "description": "Proyecto realizado para empresa Bambino. Shopify con sistema de pago, integración de servicios de seguimiento y caracteristicas personalizadas.",
+    "url": "https://bambino.cl"
+  },
+  {
+    "title": "Flowco.cl",
+    "img": { "src": "/img/proyects/flowco_02.webp" },
+    "description": "Proyecto realizado para empresa Flowco. Shopify con sistema de pago, integración de servicios de seguimiento y caracteristicas personalizadas.",
+    "url": "https://flowco.cl"
+  },
+  {
+    "title": "Foodnutrition.cl",
+    "img": { "src": "/img/proyects/foodnutrition_04.webp" },
+    "description": "Proyecto realizado para empresa Food Nutrition. Shopify con sistema de pago, integración de servicios de seguimiento y caracteristicas personalizadas.",
+    "url": "https://foodnutrition.cl"
+  },
+  {
+    "title": "Holabefree.cl",
+    "img": { "src": "/img/proyects/holabefree.webp" },
+    "description": "Proyecto realizado para empresa Holabefree. Shopify con sistema de pago, integración de servicios de seguimiento y caracteristicas personalizadas.",
+    "url": "https://holabefree.cl"
+  },
+  {
+    "title": "Outdoorlife.cl",
+    "img": { "src": "/img/proyects/outdoorlife_05.webp" },
+    "description": "Proyecto realizado para empresa Outdoorlife. Shopify con sistema de pago, integración de servicios de seguimiento y caracteristicas personalizadas.",
+    "url": "https://outdoorlife.cl"
+  },
+  {
+    "title": "Champs.cl",
+    "img": { "src": "/img/proyects/tiendachamps_03.webp" },
+    "description": "Proyecto realizado para empresa Champs.Shopify con sistema de pago, integración de servicios de seguimiento y caracteristicas personalizadas.",
+    "url": "https://champs.cl"
+  }
+]

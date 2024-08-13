@@ -1,6 +1,5 @@
 ---
 import Star from '../assets/images/estrella.png';
-import LogoGoogle from '../assets/images/google.png';
 
 // Review.astro
 interface Props {
@@ -13,13 +12,19 @@ const { name, image, rating } = Astro.props;
 const stars = Array.from({ length: rating }, (_, i) => i + 1);
 ---
 
-<div class="flex items-center space-x-4 p-4 bg-white rounded-lg shadow-xl">
-  <img src={image} alt={name} class="w-16 h-16 rounded-full">
-  <div>
-    <div class="flex items-center justify-between">
-      <h2 class="text-xl font-bold">{name}</h2>
+<div class="flex flex-col p-5 bg-white rounded-lg shadow-xl">
+ <div class="flex items-center">
+   <img src={image} alt={name} class="w-12 h-12 rounded-full">
+   <h2 class="text-xl font-bold ml-3">{name}</h2>
+ </div>
+  <p class="text-gray-500 py-4">
+    <slot></slot>
+  </p>
+
+  <div class="flex justify-end">
+    
+    <div>
       <div class="flex items-center">
-        <img src={LogoGoogle.src} alt="Google Logo" class="w-6 h-6">
         <span class="text-xl font-bold ml-2">{rating}.0</span>
         <div class="flex ml-2">
              {stars.map(() => (
@@ -28,8 +33,6 @@ const stars = Array.from({ length: rating }, (_, i) => i + 1);
         </div>
       </div>
     </div>
-    <p class="text-gray-500 mt-2">
-      <slot></slot>
-    </p>
+    
   </div>
 </div>

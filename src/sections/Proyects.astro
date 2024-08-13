@@ -3,16 +3,16 @@ import ProjectCard from '../components/ProyectCard.astro'
 import projects from '../data/proyects.json' // Asegúrate de que la ruta sea correcta
 ---
 
-<section class="text-gray-600 body-font py-24">
+<section class="text-gray-600 body-font py-24 bg-secondary ">
     <div class="px-2 container mx-auto">
       <div class="flex flex-col text-center w-full mb-20">
-        <h2 class="md:text-4xl text-2xl font-bold title-font mb-4 text-gray-800 px-2 md:px-[250px]">Se parte de nuestros clientes felices
+        <h2 class="md:text-5xl text-2xl font-bold title-font mb-4 text-white px-2 md:px-[50px] lg:px-[250px] tracking-wide md:leading-[4rem] landing-normal">Se parte de nuestros clientes satisfechos
           que han confiado en nuestro servicio</h2>
        
       </div>
       <div class="container mx-auto flex flex-wrap -m-4">
         {projects.map((project) => (
-          <ProjectCard title={project.title} img={project.img} description={project.description} />
+          <ProjectCard title={project.title} img={project.img} description={project.description} url={project.url} />
         ))}
       </div>
     </div>

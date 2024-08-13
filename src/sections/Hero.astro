@@ -1,64 +1,60 @@
 ---
 import Rocket from "../components/Rocket.astro";
 ---
+
 <section class="bg-hero">
-  <div class="flex container mx-auto py-10 md:pb-[100px] justify-center items-center">
-   
+  <div
+    class="flex container mx-auto py-10 md:pb-[100px] justify-center items-center"
+  >
     <div class="text-center flex justify-center items-center flex-col">
       <Rocket />
-      <h1 class="text-2xl md:text-5xl leading-normal my-4 px-2 md:px-[250px] md:leading-[4rem] text-secondary">
-      
-        <span class="text-primary">Aumente</span> 
-        su éxito en línea con un sitio web diseñado para <br>atraer y vender
+      <h1
+        class="text-2xl md:text-5xl tracking-wide leading-normal my-4 px-2 md:leading-[4rem] lg:px-[250px] md:px-[10px] sm:px-0 text-black font-bold"
+      >
+        <span class="text-primary">Impulsa</span>
+         tu éxito online con un sitio web atractivo que atrae y vende.
       </h1>
-      <p class="text-md my-3 md:text-2xl">
-        Bienvenidos a un nuevo horizonte de oportunidades digitales
-      </p>
+   
       <a
         href="#formulario"
         title="Solicitar presupuesto personalizado"
         target="_blank"
         rel="noopener noreferrer"
-        class="mt-2 uppercase text-balance inline-flex gap-2 items-center bg-primary hover:bg-secondary active:bg-secondary text-white font-bold py-2 px-4 rounded-lg border transition duration-200 ease-in-out hover:scale-105 justify-center text-center"
+        class="mt-2 uppercase text-balance inline-flex gap-2 items-center bg-amber-300 hover:bg-amber-400 active:bg-amber-300 text-black font-bold py-2 px-4 rounded-lg border transition duration-200 ease-in-out hover:scale-105 justify-center text-center text-sm md:text-xl"
         >Solicitar presupuesto personalizado</a
       >
       <div class="flex items-center justify-center mt-4">
         <p>Paga hasta en <strong>3 cuotas*</strong> precio contado con</p>
-        <img src="/img/webpay-logo.webp" alt="Webpay Logo" class="mr-2">
-      </div> 
+        <img src="/img/webpay-logo.webp" alt="Webpay Logo" class="mr-2" />
+      </div>
     </div>
   </div>
 </section>
 
 <style>
   .bg-hero {
-  background: fixed;
-  background-image: radial-gradient(
-      circle at 13% 47%,
-      rgba(205, 237, 248, 0.2) 0%,
-      rgba(173, 216, 230, 0.2) 25%,
-      transparent 25%,
-      transparent 25%
-    ),
-    radial-gradient(
-      circle at 97% 17%,
-      rgba(30, 144, 255, 0.35) 0%,
-      rgba(216, 236, 255, 0.35) 56%,
-      transparent 56%,
-      transparent 25%
-    ),
-    radial-gradient(
-      circle at 50% 100%,
-      rgba(188, 238, 255, 0.2) 0%,
-      rgba(0, 191, 255, 0.107) 36%,
-      transparent 36%,
-      transparent 100%
-    ),
-   
-    linear-gradient(90deg, rgba(240, 248, 255, 0.9), rgba(240, 248, 255, 0.9));
-}
-
-
-
+    background: fixed;
+    background-image: radial-gradient(
+        circle at 13% 47%,
+        rgba(205, 237, 248, 0.2) 0%,
+        rgba(173, 216, 230, 0.2) 25%,
+        transparent 25%,
+        transparent 25%
+      ),
+      radial-gradient(
+        circle at 97% 17%,
+        rgba(30, 144, 255, 0.35) 0%,
+        rgba(216, 236, 255, 0.35) 56%,
+        transparent 56%,
+        transparent 25%
+      ),
+      radial-gradient(
+        circle at 50% 100%,
+        rgba(188, 238, 255, 0.2) 0%,
+        rgba(0, 191, 255, 0.107) 36%,
+        transparent 36%,
+        transparent 100%
+      ),
+      linear-gradient(90deg, rgba(240, 248, 255, 0.9), rgba(240, 248, 255, 0.9));
+  }
 </style>
-
