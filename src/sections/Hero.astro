@@ -32,29 +32,55 @@ import Rocket from "../components/Rocket.astro";
 </section>
 
 <style>
-  .bg-hero {
-    background: fixed;
-    background-image: radial-gradient(
-        circle at 13% 47%,
-        rgba(205, 237, 248, 0.2) 0%,
-        rgba(173, 216, 230, 0.2) 25%,
-        transparent 25%,
-        transparent 25%
-      ),
-      radial-gradient(
-        circle at 97% 17%,
-        rgba(30, 144, 255, 0.35) 0%,
-        rgba(216, 236, 255, 0.35) 56%,
-        transparent 56%,
-        transparent 25%
-      ),
-      radial-gradient(
-        circle at 50% 100%,
-        rgba(188, 238, 255, 0.2) 0%,
-        rgba(0, 191, 255, 0.107) 36%,
-        transparent 36%,
-        transparent 100%
-      ),
-      linear-gradient(90deg, rgba(240, 248, 255, 0.9), rgba(240, 248, 255, 0.9));
-  }
+ .bg-hero {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(90deg, rgba(240, 248, 255, 0.9), rgba(240, 248, 255, 0.9));
+}
+
+.bg-hero::before,
+.bg-hero::after {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0.5;
+    animation: moveCircle 20s infinite;
+}
+
+.bg-hero::before {
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle at center, rgba(30, 144, 255, 0.35) 0%, rgba(173, 216, 230, 0.2) 25%, transparent 25%);
+    top: 13%;
+    left: 13%;
+    animation-duration: 25s;
+}
+
+.bg-hero::after {
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle at center, rgba(30, 144, 255, 0.45) 0%, rgba(216, 236, 255, 0.35) 56%, transparent 26%);
+    bottom: 17%;
+    right: 13%;
+    animation-duration: 30s;
+}
+
+@keyframes moveCircle {
+    0% {
+        transform: translate(0, 0);
+    }
+    25% {
+        transform: translate(20px, -30px);
+    }
+    50% {
+        transform: translate(-20px, 30px);
+    }
+    75% {
+        transform: translate(30px, 20px);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
 </style>

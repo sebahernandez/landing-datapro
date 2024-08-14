@@ -3,10 +3,10 @@ import ProjectCard from '../components/ProyectCard.astro'
 import projects from '../data/proyects.json' // Asegúrate de que la ruta sea correcta
 ---
 
-<section class="text-gray-600 body-font py-24 bg-secondary ">
+<section class="text-gray-600 body-font py-24 bg-hero ">
     <div class="px-2 container mx-auto">
       <div class="flex flex-col text-center w-full mb-20">
-        <h2 class="md:text-5xl text-2xl font-bold title-font mb-4 text-white px-2 md:px-[50px] lg:px-[250px] tracking-wide md:leading-[4rem] landing-normal">Se parte de nuestros clientes satisfechos
+        <h2 class="md:text-5xl text-2xl font-bold title-font mb-4 text-black px-2 md:px-[50px] lg:px-[250px] tracking-wide md:leading-[4rem] landing-normal">Se parte de nuestros clientes satisfechos
           que han confiado en nuestro servicio</h2>
        
       </div>
@@ -17,3 +17,32 @@ import projects from '../data/proyects.json' // Asegúrate de que la ruta sea co
       </div>
     </div>
   </section>
+
+
+  <style>
+    .bg-hero {
+      background: fixed;
+      background-image: radial-gradient(
+          circle at 13% 47%,
+          rgba(205, 237, 248, 0.2) 0%,
+          rgba(173, 216, 230, 0.2) 25%,
+          transparent 25%,
+          transparent 25%
+        ),
+        radial-gradient(
+          circle at 97% 17%,
+          rgba(30, 144, 255, 0.35) 0%,
+          rgba(216, 236, 255, 0.35) 56%,
+          transparent 56%,
+          transparent 25%
+        ),
+        radial-gradient(
+          circle at 50% 100%,
+          rgba(188, 238, 255, 0.2) 0%,
+          rgba(0, 191, 255, 0.107) 36%,
+          transparent 36%,
+          transparent 100%
+        ),
+        linear-gradient(90deg, rgba(240, 248, 255, 0.9), rgba(240, 248, 255, 0.9));
+    }
+  </style>
